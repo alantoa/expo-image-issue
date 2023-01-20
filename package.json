@@ -13,7 +13,7 @@
     "@types/react-native": "~0.70.6",
     "expo": "~47.0.12",
     "expo-av": "~13.0.2",
-    "expo-image": "^1.0.0-beta.0",
+    "expo-image": "^1.0.0-beta.1",
     "expo-splash-screen": "~0.17.5",
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",

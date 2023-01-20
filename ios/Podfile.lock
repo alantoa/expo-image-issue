@@ -3,6 +3,9 @@ PODS:
   - DoubleConversion (1.1.6)
   - EXApplication (5.0.1):
     - ExpoModulesCore
+  - EXAV (13.0.2):
+    - ExpoModulesCore
+    - ReactCommon/turbomodule/core
   - EXConstants (14.0.2):
     - ExpoModulesCore
   - EXErrorRecovery (4.0.1):
@@ -13,10 +16,10 @@ PODS:
     - ExpoModulesCore
   - Expo (47.0.13):
     - ExpoModulesCore
-  - ExpoImage (1.0.0-beta.0):
+  - ExpoImage (1.0.0-beta.1):
     - ExpoModulesCore
-    - SDWebImage (~> 5.14.2)
-    - SDWebImageAVIFCoder (~> 0.9.3)
+    - SDWebImage (~> 5.15.0)
+    - SDWebImageAVIFCoder (~> 0.9.4)
     - SDWebImageSVGCoder (~> 1.6.1)
     - SDWebImageWebPCoder (~> 0.9.1)
   - ExpoKeepAwake (11.0.1):
@@ -334,9 +337,9 @@ PODS:
     - React-perflogger (= 0.70.5)
   - RNFlashList (1.4.0):
     - React-Core
-  - SDWebImage (5.14.3):
-    - SDWebImage/Core (= 5.14.3)
-  - SDWebImage/Core (5.14.3)
+  - SDWebImage (5.15.0):
+    - SDWebImage/Core (= 5.15.0)
+  - SDWebImage/Core (5.15.0)
   - SDWebImageAVIFCoder (0.9.4):
     - libavif (>= 0.9.1)
     - SDWebImage (~> 5.10)
@@ -351,6 +354,7 @@ DEPENDENCIES:
   - boost (from `../node_modules/react-native/third-party-podspecs/boost.podspec`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - EXApplication (from `../node_modules/expo-application/ios`)
+  - EXAV (from `../node_modules/expo-av/ios`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
   - EXErrorRecovery (from `../node_modules/expo-error-recovery/ios`)
   - EXFileSystem (from `../node_modules/expo-file-system/ios`)
@@ -413,6 +417,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   EXApplication:
     :path: "../node_modules/expo-application/ios"
+  EXAV:
+    :path: "../node_modules/expo-av/ios"
   EXConstants:
     :path: "../node_modules/expo-constants/ios"
   EXErrorRecovery:
@@ -500,12 +506,13 @@ SPEC CHECKSUMS:
   boost: a7c83b31436843459a1961bfd74b96033dc77234
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   EXApplication: 034b1c40a8e9fe1bff76a1e511ee90dff64ad834
+  EXAV: 9a45d37772c5329294c054a041dcc39931fc5032
   EXConstants: 3c86653c422dd77e40d10cbbabb3025003977415
   EXErrorRecovery: ae43433feb0608a64dc5b1c8363b3e7769a9ea24
   EXFileSystem: 60602b6eefa6873f97172c684b7537c9760b50d6
   EXFont: 319606bfe48c33b5b5063fb0994afdc496befe80
   Expo: b9fa98bf260992312ee3c424400819fb9beadafe
-  ExpoImage: 564f9a8074700cba8952f678b2504e9d0764d752
+  ExpoImage: 1e7f82b818dbace2f10b0ae74a30db8c77f69dc2
   ExpoKeepAwake: 69b59d0a8d2b24de9f82759c39b3821fec030318
   ExpoModulesCore: 485dff3a59b036a33b6050c0a5aea3cf1037fdd1
   EXSplashScreen: 3e989924f61a8dd07ee4ea584c6ba14be9b51949
@@ -545,7 +552,7 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 7401c4a40f8728fd89df4a56104541b760876117
   ReactCommon: c9246996e73bf75a2c6c3ff15f1e16707cdc2da9
   RNFlashList: 399bf6a0db68f594ad2c86aaff3ea39564f39f8a
-  SDWebImage: 9c36e66c8ce4620b41a7407698dda44211a96764
+  SDWebImage: 9bec4c5cdd9579e1f57104735ee0c37df274d593
   SDWebImageAVIFCoder: 5bf07409ab8a02f0a8e0ac976719b321d8fce209
   SDWebImageSVGCoder: 6fc109f9c2a82ab44510fff410b88b1a6c271ee8
   SDWebImageWebPCoder: 18503de6621dd2c420d680e33d46bf8e1d5169b0

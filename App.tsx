@@ -26,7 +26,10 @@ const renderItem = ({ item, index }) => {
         height: imageWidth,
         width: imageWidth,
       }}
-      cachePolicy="memory-disk"
+      onLoad={(event) => {
+        // console.log(event.cacheType, performance.now() - timeStart)
+      }}
+      cachePolicy="disk"
     />
   );
 };
