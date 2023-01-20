@@ -1,4 +1,11 @@
-import { StyleSheet, Text, View, Dimensions, SafeAreaView } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Dimensions,
+  SafeAreaView,
+  // Image,
+} from "react-native";
 import { TabView, SceneMap } from "react-native-tab-view";
 import React from "react";
 import { FlashList } from "@shopify/flash-list";
@@ -11,6 +18,7 @@ const imageWidth = layout.width / 3;
 const renderItem = ({ item, index }) => {
   return (
     <Image
+      key={index}
       source={{
         uri: item,
       }}
@@ -25,6 +33,7 @@ const renderItem = ({ item, index }) => {
 const DayRoute = () => {
   return (
     <FlashList
+      keyExtractor={(_, index) => `${index}`}
       data={day}
       numColumns={3}
       estimatedItemSize={imageWidth}
@@ -44,6 +53,7 @@ const DayRoute = () => {
 const WeekRoute = () => {
   return (
     <FlashList
+      keyExtractor={(_, index) => `${index}`}
       data={week}
       numColumns={3}
       estimatedItemSize={imageWidth}
@@ -62,6 +72,7 @@ const WeekRoute = () => {
 const MonthRoute = () => {
   return (
     <FlashList
+      keyExtractor={(_, index) => `${index}`}
       data={month}
       numColumns={3}
       estimatedItemSize={imageWidth}
